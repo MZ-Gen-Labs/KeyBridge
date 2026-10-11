@@ -1,0 +1,26 @@
+# Build products and local development copies
+.build/
+dist/
+dist.noindex/
+.swiftpm/
+
+# Local notes and runtime data
+.local/
+.env
+.env.*
+*.keychain
+*.keychain-db
+*.p12
+*.pfx
+*.pem
+*.mobileprovision
+mcp-catalog.json
+
+# macOS / editors / Python
+.DS_Store
+*.xcuserstate
+xcuserdata/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
