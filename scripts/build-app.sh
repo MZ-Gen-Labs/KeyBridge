@@ -18,6 +18,7 @@ cp Resources/AppIcon.icns "$APP/Contents/Resources/AppIcon.icns"
 cp Resources/MenuBarIcon.png "$APP/Contents/Resources/MenuBarIcon.png"
 # A stable identifier allows local Keychain access; no iCloud entitlement is needed.
 codesign --force --sign - --identifier dev.keybridge.app "$APP"
+codesign --verify --deep --strict --verbose=2 "$APP"
 print "Built: $APP"
 
 # Keep developer builds out of the Mac application launcher.
